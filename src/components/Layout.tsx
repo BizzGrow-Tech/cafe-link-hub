@@ -5,6 +5,7 @@ import {
   Calendar, 
   Coffee, 
   QrCode,
+  DollarSign,
   Menu,
   X
 } from "lucide-react";
@@ -15,6 +16,7 @@ const navigationItems = [
   { title: "Dashboard", icon: LayoutDashboard, path: "/" },
   { title: "Bookings", icon: Calendar, path: "/bookings" },
   { title: "Subscription Claims", icon: Coffee, path: "/subscriptions" },
+  { title: "Additional Revenue", icon: DollarSign, path: "/additional-revenue" },
   { title: "QR Scan", icon: QrCode, path: "/qr-scan" },
 ];
 

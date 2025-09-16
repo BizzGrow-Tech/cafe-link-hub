@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Bookings from "./pages/Bookings";
 import Subscriptions from "./pages/Subscriptions";
+import AdditionalRevenue from "./pages/AdditionalRevenue";
 import QRScan from "./pages/QRScan";
 import NotFound from "./pages/NotFound";
 
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/bookings" element={<Bookings />} />
           <Route path="/subscriptions" element={<Subscriptions />} />
+          <Route path="/additional-revenue" element={<AdditionalRevenue />} />
           <Route path="/qr-scan" element={<QRScan />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

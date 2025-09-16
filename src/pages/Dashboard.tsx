@@ -105,43 +105,6 @@ const Dashboard = () => {
             </CardContent>
           </Card>
         </div>
-
-        {/* Additional Revenue Generated Section */}
-        <div className="space-y-4">
-          <div className="flex items-center justify-between">
-            <h2 className="text-2xl font-display font-bold text-primary">Additional Revenue Generated (Pending Approval)</h2>
-          </div>
-          
-          <Card className="cafe-shadow">
-            <CardContent className="p-6">
-              <div className="space-y-4">
-                {[
-                  { name: "Rahul Sharma", amount: "₹450", image: "/src/assets/bill-placeholder.png" },
-                  { name: "Ananya Mehta", amount: "₹780", image: "/src/assets/bill-placeholder.png" },
-                  { name: "Priya Singh", amount: "₹1200", image: "/src/assets/bill-placeholder.png" },
-                  { name: "Vikram Kumar", amount: "₹650", image: "/src/assets/bill-placeholder.png" },
-                ].map((entry, i) => (
-                  <div key={i} className="flex items-center justify-between p-4 bg-muted/30 rounded-lg border border-border/50">
-                    <div className="flex items-center space-x-4">
-                      <img 
-                        src={entry.image} 
-                        alt="Bill thumbnail" 
-                        className="w-12 h-12 rounded-md object-cover border border-border"
-                      />
-                      <div>
-                        <p className="font-medium text-primary">{entry.name}</p>
-                        <p className="text-sm text-muted-foreground">Bill Amount: {entry.amount}</p>
-                      </div>
-                    </div>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-orange-100 text-orange-800 border border-orange-200">
-                      Pending Approval
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        </div>
       </div>
     </Layout>
   );
